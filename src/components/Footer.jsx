@@ -2,7 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer className='text-center text-sm'>
+      &copy; 2026 Shabna PM • Created with ❤️ and &lt;/&gt;
+    </footer>
   )
 }
 

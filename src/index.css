@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-primary: #8b5cf6; /* violet */
+    --color-secondary: #06b6d4; /*cyan*/
+    --color-dark: '#0f172a';
+    --color-card: '#1e293b';
+    --color-chip: 'rgba(30, 41, 59, 0.5)'
+}
