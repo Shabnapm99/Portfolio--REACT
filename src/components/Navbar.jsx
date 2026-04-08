@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Navbar() {
+  const [themeToggle, setThemeToggle] = useState(false);
+  document.querySelector('html').setAttribute("data-theme", themeToggle ? 'light' : 'dark');
+
+  const handleToggle = () => {
+    setThemeToggle(!themeToggle);
+  }
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -18,27 +24,27 @@ function Navbar() {
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Shabna PM</a>
+        <a className="btn btn-ghost text-4xl text-gradient font-bold">Shabna PM</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Skills</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
+          <li><a href='#home' className='hover:text-prim-violet  font-medium'>Home</a></li>
+          <li><a href='#about' className='hover:text-prim-violet font-medium'>About</a></li>
+          <li><a href='#skills' className='hover:text-prim-violet font-medium'>Skills</a></li>
+          <li><a href='#projects' className='hover:text-prim-violet font-medium'>Projects</a></li>
+          <li><a href='#contact' className='hover:text-prim-violet font-medium'>Contact</a></li>
 
         </ul>
       </div>
 
-      <div className="navbar-end">
+      <div className="navbar-end flex items-center gap-4">
         <label className="swap swap-rotate">
           {/* this hidden checkbox controls the state */}
-          <input type="checkbox" className="theme-controller" value="synthwave" />
+          <input type="checkbox" className="theme-controller" value="synthwave" onChange={handleToggle} />
 
           {/* sun icon */}
           <svg
-            className="swap-off h-10 w-10 fill-current"
+            className="swap-off h-6 w-6 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24">
             <path
@@ -47,14 +53,14 @@ function Navbar() {
 
           {/* moon icon */}
           <svg
-            className="swap-on h-10 w-10 fill-current"
+            className="swap-on h-6 w-6 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24">
             <path
               d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
           </svg>
         </label>
-        <a className="btn bg-secondary">Resume</a>
+        <a className="btn bg-prim-violet rounded-2xl hover:scale-105 transition-all">Resume</a>
       </div>
     </div>
   )

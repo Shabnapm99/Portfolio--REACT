@@ -1,10 +1,31 @@
 @import "tailwindcss";
-@plugin "daisyui";
-
+/* @plugin "daisyui"; */
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @theme {
-    --color-primary: #8b5cf6; /* violet */
-    --color-secondary: #06b6d4; /*cyan*/
+    --color-prim-violet: #8b5cf6; /* violet */
+    --color-seco-cyan: #06b6d4; /*cyan*/
     --color-dark: '#0f172a';
     --color-card: '#1e293b';
     --color-chip: 'rgba(30, 41, 59, 0.5)'
 }
+ /* Gradient Text */
+    .text-gradient {
+      background: linear-gradient(to right, #8b5cf6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+     /* Typewriter Cursor Animation
+    .cursor-blink {
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background-color: currentColor;
+      margin-left: 2px;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } } */
+
