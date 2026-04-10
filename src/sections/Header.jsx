@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 function Header() {
     return (
-        <header className=''>
+        <header className='sticky top-0 left-0 '>
             <Navbar />
         </header>
     )

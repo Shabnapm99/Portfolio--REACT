@@ -7,9 +7,9 @@
 @theme {
     --color-prim-violet: #8b5cf6; /* violet */
     --color-seco-cyan: #06b6d4; /*cyan*/
-    --color-dark: '#0f172a';
-    --color-card: '#1e293b';
-    --color-chip: 'rgba(30, 41, 59, 0.5)'
+    --color-dark: #0f172a;
+    --color-card: #1e293b;
+    --color-chip: rgba(30, 41, 59, 0.5)
 }
  /* Gradient Text */
     .text-gradient {

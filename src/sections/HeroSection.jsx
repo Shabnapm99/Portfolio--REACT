@@ -11,7 +11,7 @@ function HeroSection() {
 
       <div className='text-2xl md:text-4xl font-semibold text-slate-600 mb-10 h-12'>
         {/* <span id="typewriter" className='cursor-blink'></span> */}
-        <Typewriter words={['Full-Stack Developer', 'MERN Stack Developer', 'FrontEnd Dveloper']}
+        <Typewriter words={['Full-Stack Developer', 'MERN Stack Developer', 'FrontEnd Developer']}
           loop={0}
           cursor
           cursorStyle="|"
