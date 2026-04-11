@@ -6,10 +6,10 @@ function Skills() {
   const skills = data.skills;
 
   return (
-    <section id='skills' className='py-24 relative'>
+    <section id='skills' className='relative pb-20'>
       
       {/* Background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-prim-violet/10 blur-3xl opacity-30 pointer-events-none"></div>
+      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-125 h-75 bg-prim-violet/10 blur-3xl opacity-30 pointer-events-none"></div> */}
 
       <div className='max-w-6xl mx-auto px-4 relative z-10'>
         

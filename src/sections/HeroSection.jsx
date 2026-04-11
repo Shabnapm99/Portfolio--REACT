@@ -3,7 +3,13 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function HeroSection() {
   return (
-    <section id='home' className='pt-10 flex flex-col items-center'>
+    <section id='home' className='pt-10 flex flex-col items-center overflow-hidden'>
+       {/* Background Gradient Blobs  */}
+      <div className="absolute top-1/4 left-0 w-60 md:w-72 h-60 md:h-72 bg-prim-violet/20 rounded-full blur-[100px] animate-pulse">
+      </div>
+      <div
+        className="absolute bottom-1/4 right-0 w-72 md:w-96 h-72 md:h-96 bg-seco-cyan/20 rounded-full blur-[100px] animate-pulse delay-700">
+      </div>
       <div className='text-center'>
         <p className='text-prim-violet font-mono tracking-widest text-lg mb-5'>Hi, MY NAME IS</p>
         <h1 className='text-5xl md:text-8xl font-bold mb-6 '>Shabna <span className='text-gradient'>Pm.</span></h1>
@@ -22,7 +28,7 @@ function HeroSection() {
 
 
 
-      <p class="max-w-2xl mx-auto text-lg mb-10 text-center">
+      <p class="max-w-2xl mx-auto text-base md:text-lg mb-10 text-center">
         I build high-performance, scalable web applications using the MERN stack.
         Specializing in bridging the gap between robust backend systems and intuitive frontend experiences.
       </p>
