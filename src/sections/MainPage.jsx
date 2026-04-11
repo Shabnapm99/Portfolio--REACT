@@ -4,6 +4,7 @@ import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import Journey from './Journey'
 
 function MainPage() {
     return (
@@ -12,6 +13,7 @@ function MainPage() {
             <About />
             <Skills />
             <Projects />
+            <Journey />
             <Contact />
         </main>
     )

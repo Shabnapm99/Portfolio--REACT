@@ -6,7 +6,7 @@ function Skills() {
   const skills = data.skills;
 
   return (
-    <section id='skills' className='relative pb-20'>
+    <section id='skills' className='relative pt-20'>
       
       {/* Background glow */}
       {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-125 h-75 bg-prim-violet/10 blur-3xl opacity-30 pointer-events-none"></div> */}
