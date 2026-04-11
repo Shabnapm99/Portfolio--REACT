@@ -16,15 +16,15 @@ function Navbar() {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Skills</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
+            className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-4xl text-gradient font-bold">Shabna PM</a>
+        <a className="btn btn-ghost text-2xl md:text-4xl text-gradient font-bold">Shabna PM</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

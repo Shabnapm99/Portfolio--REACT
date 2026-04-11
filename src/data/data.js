@@ -24,5 +24,18 @@ export const data = {
             live: "https://task-manager-one-mu-56.vercel.app/"
 
         },
+    ],
+    skills:[
+        {
+            title:"FrontEnd",
+            techStack:["HTML5","CSS3","React","Tailwind"]
+        },
+                {
+            title:"Backend & Databases",
+            techStack:["Node.js","Express.js","MongoDB"]
+        },        {
+            title:"Tools & more",
+            techStack:["Git & GitHub","Postman","MySQL","SAP Commerce Cloud"]
+        },
     ]
 }
