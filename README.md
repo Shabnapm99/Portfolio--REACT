@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 
-[Your Deployed Link Here - e.g., https://yourproject.vercel.app]
+Live link : https://portfolio-react-seven-plum.vercel.app/
 
 ## 📖 Description
 

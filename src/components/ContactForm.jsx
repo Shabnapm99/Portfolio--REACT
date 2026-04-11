@@ -5,7 +5,7 @@ function ContactForm() {
     <form className='space-y-4'>
       <div>
         <label class="block text-sm font-semibold mb-2" for="name">Name</label>
-        <input class="w-full bg-white dark:bg-card border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-prim-violet focus:border-transparent outline-none transition-all" id="name" name="name" placeholder="John Doe" type="text" />
+        <input class="w-full bg-white dark:bg-card border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-prim-violet focus:border-transparent outline-none transition-all" id="name" name="name" placeholder="Name" type="text" />
       </div>
       <div>
         <label class="block text-sm font-semibold mb-2" for="email">Email</label>
