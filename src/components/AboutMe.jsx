@@ -8,12 +8,12 @@ function AboutMe() {
                 <p>
                     Hello! I'm Shabna PM, a Full Stack Developer with a passion for building digital solutions that solve
                     real-world problems. My journey in tech began with 2 years of professional experience as a
-                    <span class="text-seco-cyan font-semibold"> SAP Commerce Cloud Developer</span>, where I mastered
+                    <span className="text-seco-cyan font-semibold"> SAP Commerce Cloud Developer</span>, where I mastered
                     complex enterprise architectures.
                 </p>
                 <p>
                     Driven by a desire to explore the full potential of the modern web, I've successfully pivoted and
-                    upskilled into the <span class="text-prim-violet font-semibold">MERN Stack</span>.
+                    upskilled into the <span className="text-prim-violet font-semibold">MERN Stack</span>.
                     I love creating seamless user interfaces and architecting efficient server-side logic.
                 </p>
             </div>

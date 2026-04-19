@@ -28,7 +28,7 @@ function HeroSection() {
 
 
 
-      <p class="max-w-2xl mx-auto text-base md:text-lg mb-10 text-center">
+      <p className="max-w-2xl mx-auto text-base md:text-lg mb-10 text-center">
         I build high-performance, scalable web applications using the MERN stack.
         Specializing in bridging the gap between robust backend systems and intuitive frontend experiences.
       </p>

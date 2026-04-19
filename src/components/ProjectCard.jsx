@@ -34,8 +34,8 @@ function ProjectCard({ project }) {
         <h2 className="card-title">{project.title}</h2>
         <p className='mb-6'>{project.description}</p>
         <div className="card-actions justify-start text-[20px]">
-          <a class="text-prim-violet hover:text-seco-cyan transition-colors" href={project.github} target='_blank'><FaGithub /></a>
-          <a class="text-prim-violet hover:text-seco-cyan transition-colors" href={project.live} target='_blank'><FaArrowUpRightFromSquare /></a>
+          <a className="text-prim-violet hover:text-seco-cyan transition-colors" href={project.github} target='_blank'><FaGithub /></a>
+          <a className="text-prim-violet hover:text-seco-cyan transition-colors" href={project.live} target='_blank'><FaArrowUpRightFromSquare /></a>
         </div>
       </div>
     </div>

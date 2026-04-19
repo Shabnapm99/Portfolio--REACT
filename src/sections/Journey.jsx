@@ -53,9 +53,9 @@ function Journey() {
                 <div className="mt-12 text-center">
                     <a className="inline-flex items-center px-6 py-3 border-2 border-prim-violet text-prim-violet font-bold rounded-xl hover:bg-prim-violet hover:text-white transition-all group"
                         href="/file/Shabnapm-Resume.pdf" download>
-                        <svg class="w-5 h-5 mr-2 group-hover:animate-bounce" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2"></path>
+                        <svg className="w-5 h-5 mr-2 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" strokeLinecap="round"
+                                strokeLinejoin="round" strokeWidth="2"></path>
                         </svg>
                         Download Full Resume
                     </a>
