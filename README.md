@@ -6,16 +6,21 @@ Live link : https://portfolio-react-seven-plum.vercel.app/
 
 ## 📖 Description
 
-This is a personal portfolio website built using React. It showcases my skills, projects, and experience in web development through a clean and responsive single-page layout. The portfolio is designed to provide an overview of my work, technical stack, and contact information, and is optimized for both desktop and mobile devices.
+This is my personal portfolio website built using React.js. It showcases my skills, projects, and experience as a Full Stack Developer in transition. The website is designed with a clean, modern UI and a fully responsive layout to ensure a smooth experience across all devices.
+
+It serves as a central place to highlight my technical expertise, real-world projects, and professional background for recruiters and collaborators.
 
 
 ## ✨ Features
-- Feature 1: Brief description
-- Feature 2: Brief description
-- Feature 3: Brief description
-- Feature 4: Brief description
-- Responsive design for all devices
-- [Optional] AI Integration: Describe if implemented
+- 🧑‍💻 About Section – Introduction with skills, experience, and career focus
+- 💼 Projects Showcase – Displays real-world projects with descriptions, tech stack, and live/GitHub links
+- 🛠️ Skills Section – Highlights technical stack including frontend and backend technologies
+- 📄 Resume Section – Option to view/download resume
+- 📬 Contact Section – Easy way to connect via email or social links
+- 🌙 Dark/Light Mode Toggle – User-friendly theme switching experience
+- 🔗 Direct Links Integration – Quick access to GitHub and LinkedIn profiles
+- 📱 Fully Responsive Design – Optimized for mobile, tablet, and desktop devices
+- ⚡ Smooth UI/UX – Clean layout with modern design and smooth navigation
 
 ## 🎯 Project Goals
 The main goal of this project was to create a personal portfolio website using React that highlights my skills, projects, and experience. Through this project, I aimed to:
@@ -32,15 +37,22 @@ The main goal of this project was to create a personal portfolio website using R
 
 ## 🛠️ Technologies Used
 - **Frontend:** React.js
-- **Styling:** [CSS3 / Tailwind CSS / Material-UI / etc.]
-- **APIs:** [List any APIs used - e.g., OpenWeather API, TMDB API]
-- **Libraries:** [React Router, Chart.js, Axios, etc.]
-- **Deployment:** [Vercel / Netlify / GitHub Pages]
+- **Styling:** Tailwind CSS, daisyUI
+- **Libraries:** react-icons, react-simple-typewriter
+- **Deployment:** Vercel
 
-📱 Responsive Design
+## 📱 Responsive Design
 This application is fully responsive and tested on:
-● Mobile devices (375px and up)
-● Tablets (768px and up)
-● Desktop (1024px and up)
+- Mobile devices (375px and up)
+- Tablets (768px and up)
+- Desktop (1024px and up)
+
+## 🔗 Connect With Me
+- GitHub: https://github.com/Shabnapm99
+- LinkedIn: https://www.linkedin.com/in/shabnapm/
+
+## ⭐ Purpose
+
+This project reflects my journey as a developer and serves as a professional showcase of my work, skills, and growth in full-stack development.
 
 
