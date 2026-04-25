@@ -1,8 +1,12 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 function Journey() {
     return (
-        <section className='pt-24'>
+        <motion.section className='pt-24'
+            initial={{ y: 80, opacity: 0 }}        // start below
+            whileInView={{ y: 0, opacity: 1 }}     // move up to position
+            transition={{ duration: 0.6, ease: "easeOut" }}>
             <div className="container mx-auto px-6 max-w-4xl">
                 <h2 className="text-3xl font-bold mb-12 text-center">My Journey</h2>
                 <div className="relative border-l border-slate-200 dark:border-slate-800 ml-4 md:ml-0">
@@ -62,7 +66,7 @@ function Journey() {
                 </div>
             </div>
 
-        </section>
+        </motion.section>
     )
 }
 

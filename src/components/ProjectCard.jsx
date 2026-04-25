@@ -9,7 +9,8 @@ function ProjectCard({ project }) {
     "bg-seco-cyan/10 text-seco-cyan"
   ];
   return (
-    <div className="card w-full max-w-sm shadow-sm group relative bg-white dark:bg-card rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-2">
+    <div className="card w-full max-w-sm shadow-sm group relative bg-white dark:bg-card rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-2"
+    >
       <figure>
         <img
           src={project.image}
@@ -19,7 +20,7 @@ function ProjectCard({ project }) {
       <div className="card-body">
         <div className="flex gap-2 mb-4">
           {
-            project.technologies.map((tech,index) => {
+            project.technologies.map((tech, index) => {
               return (
 
                 <span

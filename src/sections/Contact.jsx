@@ -2,10 +2,14 @@ import React from 'react'
 import ContactForm from '../components/ContactForm';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 function Contact() {
     return (
-        <section id='contact' className='py-20 bg-slate-100 dark:bg-dark/50'>
+        <motion.section id='contact' className='py-20 bg-slate-100 dark:bg-dark/50'
+        initial={{ y: 80, opacity: 0 }}        // start below
+        whileInView={{ y: 0, opacity: 1 }}     // move up to position
+        transition={{ duration: 0.6, ease: "easeOut" }}>
             <div className='flex flex-col items-center'>
                 <div className='text-center mb-12'>
                     <h2 className='text-3xl font-bold mb-4 text-gradient'>Get In Touch</h2>
@@ -61,7 +65,7 @@ function Contact() {
 
             </div>
 
-        </section>
+        </motion.section>
     )
 }
 

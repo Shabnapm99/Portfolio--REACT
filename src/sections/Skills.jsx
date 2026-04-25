@@ -1,18 +1,22 @@
 import React from 'react'
 import SkillCard from '../components/SkillCard';
 import { data } from '../data/data';
+import { motion } from 'framer-motion'
 
 function Skills() {
   const skills = data.skills;
 
   return (
     <section id='skills' className='relative pt-20'>
-      
+
       {/* Background glow */}
       {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-125 h-75 bg-prim-violet/10 blur-3xl opacity-30 pointer-events-none"></div> */}
 
-      <div className='max-w-6xl mx-auto px-4 relative z-10'>
-        
+      <motion.div className='max-w-6xl mx-auto px-4 relative z-10'
+        initial={{ y: 80, opacity: 0 }}        // start below
+        whileInView={{ y: 0, opacity: 1 }}     // move up to position
+        transition={{ duration: 0.5, ease: "easeOut" }}>
+
         {/* Heading */}
         <div className='text-center mb-16'>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -29,7 +33,7 @@ function Skills() {
           ))}
         </div>
 
-      </div>
+      </motion.div>
     </section>
   )
 }
