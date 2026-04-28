@@ -6,8 +6,9 @@ function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const [sending, setSending] = useState(false);
   const form = useRef();
+  let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,17 +28,16 @@ function ContactForm() {
     if (message.length <= 10) {
       return toast.error("Message must be at least 10 characters")
     }
-
     sendEmail();
 
   }
 
   const sendEmail = () => {
-
+    setSending(true)
 
     emailjs
-      .sendForm('service_fqdq95o', 'template_bnmxowm', form.current, {
-        publicKey: 'Ppypy-W1AgmiB5o4z',
+      .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -46,11 +46,13 @@ function ContactForm() {
           setName('');
           setEmail('');
           setMessage('');
+          setSending(false);
 
         },
         (error) => {
           console.log('FAILED...', error.text);
           toast.error("Sending failed...");
+          setSending(false);
 
         },
       );
@@ -73,7 +75,7 @@ function ContactForm() {
         <textarea className="w-full bg-white dark:bg-card border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-prim-violet focus:border-transparent outline-none transition-all" id="message" name="message" placeholder="How can I help you?" rows="4" value={message}
           onChange={(e) => setMessage(e.target.value)}></textarea>
       </div>
-      <button className="w-full py-4 bg-prim-violet text-white font-bold rounded-xl hover:bg-prim-violet/90 transition-all shadow-lg shadow-prim-violet/20" type="submit">
+      <button className="w-full py-4 bg-prim-violet text-white font-bold rounded-xl hover:bg-prim-violet/90 transition-all shadow-lg shadow-prim-violet/20" type="submit" disabled={sending}>
         Send Message
       </button>
     </form>

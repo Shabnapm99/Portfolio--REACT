@@ -17,6 +17,7 @@ It serves as a central place to highlight my technical expertise, real-world pro
 - 🛠️ Skills Section – Highlights technical stack including frontend and backend technologies
 - 📄 Resume Section – Option to view/download resume
 - 📬 Contact Section – Easy way to connect via email or social links
+- 📧 Email sending functionality via contact form  throuhj emailjs
 - 🌙 Dark/Light Mode Toggle – User-friendly theme switching experience
 - 🔗 Direct Links Integration – Quick access to GitHub and LinkedIn profiles
 - 📱 Fully Responsive Design – Optimized for mobile, tablet, and desktop devices
@@ -38,7 +39,7 @@ The main goal of this project was to create a personal portfolio website using R
 ## 🛠️ Technologies Used
 - **Frontend:** React.js
 - **Styling:** Tailwind CSS, daisyUI
-- **Libraries:** react-icons, react-simple-typewriter
+- **Libraries:** react-icons, react-simple-typewriter, framer-motion, react-toastify, @emailjs/browser
 - **Deployment:** Vercel
 
 ## 📱 Responsive Design
