@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { toast } from 'react-toastify';
-// import { SMTPClient } from 'emailjs';
-
+import emailjs from '@emailjs/browser';
 function ContactForm() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,14 +28,36 @@ function ContactForm() {
       return toast.error("Message must be at least 10 characters")
     }
 
-    toast.success("Email sent successfully");
+    sendEmail();
 
-    setName('');
-    setEmail('');
-    setMessage('');
   }
+
+  const sendEmail = () => {
+
+
+    emailjs
+      .sendForm('service_fqdq95o', 'template_bnmxowm', form.current, {
+        publicKey: 'Ppypy-W1AgmiB5o4z',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          toast.success("Email sent successfully");
+          setName('');
+          setEmail('');
+          setMessage('');
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          toast.error("Sending failed...");
+
+        },
+      );
+  };
+
   return (
-    <form className='space-y-4' onSubmit={handleSubmit} noValidate>
+    <form className='space-y-4' ref={form} onSubmit={handleSubmit} noValidate>
       <div>
         <label className="block text-sm font-semibold mb-2" htmlFor="name">Name</label>
         <input className="w-full bg-white dark:bg-card border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-prim-violet focus:border-transparent outline-none transition-all" id="name" name="name" placeholder="Name" type="text" value={name}
