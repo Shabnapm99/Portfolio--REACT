@@ -39,7 +39,7 @@ The main goal of this project was to create a personal portfolio website using R
 ## 🛠️ Technologies Used
 - **Frontend:** React.js
 - **Styling:** Tailwind CSS, daisyUI
-- **Libraries:** react-icons, react-simple-typewriter, framer-motion, react-toastify, @emailjs/browser
+- **Libraries:** react-icons, react-simple-typewriter, framer-motion, react-toastify, @emailjs/browser, react-spinners
 - **Deployment:** Vercel
 
 ## 📱 Responsive Design
