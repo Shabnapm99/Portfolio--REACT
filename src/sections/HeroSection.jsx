@@ -3,8 +3,8 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function HeroSection() {
   return (
-    <section id='home' className='pt-15 flex flex-col items-center overflow-hidden'>
-       {/* Background Gradient Blobs  */}
+    <section id='home' className='pt-15 flex flex-col items-center overflow-hidden z-20'>
+      {/* Background Gradient Blobs  */}
       <div className="absolute top-1/4 left-0 w-60 md:w-72 h-60 md:h-72 bg-prim-violet/20 rounded-full blur-[100px] animate-pulse">
       </div>
       <div
@@ -27,16 +27,14 @@ function HeroSection() {
       </div>
 
 
-
       <p className="max-w-2xl mx-auto text-base md:text-lg mb-10 text-center">
-        I build high-performance, scalable web applications using the MERN stack.
-        Specializing in bridging the gap between robust backend systems and intuitive frontend experiences.
+        MERN stack developer building responsive, user-friendly web applications with strong backend logic and smooth frontend experiences.
       </p>
 
       {/* Buttons */}
 
       <div className='flex flex-col sm:flex-row items-center justify-center gap-4 mb-4'>
-        <a className='px-8 py-4 bg-prim-violet text-white rounded-xl font-bold hover:shadow-xl hover:shadow-prim-violet/30 transition-all w-full sm:w-auto' href="#projects">View My Work</a>
+        <a className='px-8 py-4 bg-prim-violet text-white rounded-xl font-bold hover:shadow-lg hover:shadow-prim-violet/30 transition-all w-full sm:w-auto' href="#projects">View My Work</a>
         <a className='px-8 py-4 border rounded-xl font-bold transition-all w-full sm:w-auto border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-white' href='#contact'>Get In Touch</a>
       </div>
 

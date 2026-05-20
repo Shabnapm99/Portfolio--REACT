@@ -20,7 +20,7 @@ function Journey() {
                             <h3 className="text-xl font-bold">Full Stack (MERN) Upskilling</h3>
                             <time className="text-sm font-mono text-prim-violet">2024 - Present</time>
                         </div>
-                        <p className="text-slate-500 mb-2">Self-Driven Learning & MERN Stack Training – Entri Elevate</p>
+                        <p className="text-slate-500 mb-2">Self-Driven Learning & MERN Stack Training – Entri Elevate Aligned with NSDC and Illinois Tech </p>
                         <p className="text-slate-600 dark:text-slate-400 mb-2">
                             Transitioned into full-stack development after 2 years in SAP Commerce Cloud, focusing on building scalable and user-friendly web applications.
                         </p>

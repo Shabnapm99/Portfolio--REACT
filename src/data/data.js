@@ -24,18 +24,27 @@ export const data = {
             live: "https://task-manager-one-mu-56.vercel.app/"
 
         },
+        {
+            title: "Hand Betting Game",
+            description: "A Mahjong-inspired Hand Betting Game featuring advanced state management, dynamic tile value scaling, reshuffling, and responsive UI design.",
+            image: "/images/Mahjong.png",
+            technologies: ["React", "Tailwind"],
+            github: 'https://github.com/Shabnapm99/Hand-Betting-Game',
+            live: "https://hand-betting-game-bzp1.vercel.app/"
+
+        },
     ],
     skills:[
         {
-            title:"FrontEnd",
-            techStack:["HTML5","CSS3","React","Tailwind"]
+            title:"Frontend",
+            techStack:["HTML5 & CSS3","JavaScript","React","Tailwind", "Bootstrap"]
         },
                 {
             title:"Backend & Databases",
-            techStack:["Node.js","Express.js","MongoDB"]
+            techStack:["Node.js","Express.js","MongoDB","MySQL"]
         },        {
             title:"Tools & more",
-            techStack:["Git & GitHub","Postman","MySQL","SAP Commerce Cloud"]
+            techStack:["Git & GitHub","Postman","SAP Commerce Cloud"]
         },
     ]
 }

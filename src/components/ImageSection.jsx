@@ -11,7 +11,7 @@ function ImageSection() {
       <img
         alt="Profile image"
         className="relative rounded-2xl w-full max-w-md mx-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-500 hover:scale-[1.02]"
-        src="/images/profile-pic.jpg"
+        src="/images/Image.jpeg"
       />
 
     </div>
