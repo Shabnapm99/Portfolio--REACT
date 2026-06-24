@@ -10,7 +10,7 @@ function Projects() {
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <section id='projects' className='bg-slate-100 dark:bg-dark/30 pt-20'>
+    <section id='projects' className='bg-slate-100 dark:bg-dark/50 pt-20'>
       <motion.div className='mx-auto px-6'
         initial={{ y: 80, opacity: 0 }}        // start below
         whileInView={{ y: 0, opacity: 1 }}     // move up to position

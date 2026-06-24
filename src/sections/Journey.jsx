@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function Journey() {
     return (
-        <motion.section className='pt-24'
+        <motion.section className='pt-24 bg-slate-100 dark:bg-dark/50'
             initial={{ y: 80, opacity: 0 }}        // start below
             whileInView={{ y: 0, opacity: 1 }}     // move up to position
             transition={{ duration: 0.6, ease: "easeOut" }}>
