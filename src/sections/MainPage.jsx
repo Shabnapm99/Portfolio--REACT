@@ -13,7 +13,7 @@ function MainPage() {
             <About />
             <Skills />
             <Projects />
-            <Journey />
+            {/* <Journey /> */}
             <Contact />
         </main>
     )
